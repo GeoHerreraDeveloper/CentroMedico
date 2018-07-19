@@ -11,7 +11,62 @@ import java.sql.Date;
  *
  * @author Usuario
  */
-public class Cita {
-   
+public class Cita{
+    private Integer codCita;
+    private Date fechaHora;
+    private String descripcion;
+    private Integer codCliente;
+    private Integer codSecretaria;
+
+    public Cita(Integer codCita, Date fechaHora, String descripcion, Integer codCliente, Integer codSecretaria) {
+        this.codCita = codCita;
+        this.fechaHora = fechaHora;
+        this.descripcion = descripcion;
+        this.codCliente = codCliente;
+        this.codSecretaria = codSecretaria;
+    }
+
+    public Integer getCodCita() {
+        return codCita;
+    }
+
+    public void setCodCita(Integer codCita) {
+        this.codCita = codCita;
+    }
+
+    public Date getFechaHora() {
+        return fechaHora;
+    }
+
+    public void setFechaHora(Date fechaHora) {
+        this.fechaHora = fechaHora;
+    }
+
+    public String getDescripcion() {
+        return descripcion;
+    }
+
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
+    }
+
+    public Integer getCodCliente() {
+        return codCliente;
+    }
+
+    public void setCodCliente(Integer codCliente) {
+        this.codCliente = codCliente;
+    }
+
+    public Integer getCodSecretaria() {
+        return codSecretaria;
+    }
+
+    public void setCodSecretaria(Integer codSecretaria) {
+        this.codSecretaria = codSecretaria;
+    }
     
+
+
+           
 }
