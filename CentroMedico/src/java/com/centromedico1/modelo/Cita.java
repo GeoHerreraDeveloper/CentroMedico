@@ -11,13 +11,22 @@ import java.sql.Date;
  *
  * @author Usuario
  */
-public class Cita{
+public class Cita {
     private Integer codCita;
     private Date fechaHora;
     private String descripcion;
     private Integer codCliente;
     private Integer codSecretaria;
 
+    public Cita() {
+        this.codCita = 0;
+        this.fechaHora = null;
+        this.descripcion = null;
+        this.codCliente = 0;
+        this.codSecretaria = 0;
+    }
+
+    
     public Cita(Integer codCita, Date fechaHora, String descripcion, Integer codCliente, Integer codSecretaria) {
         this.codCita = codCita;
         this.fechaHora = fechaHora;
