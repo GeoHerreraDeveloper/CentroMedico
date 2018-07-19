@@ -12,16 +12,16 @@ import java.sql.Date;
  * @author Usuario
  */
 public class Personas {
-    private Integer Cui;
-    private String pNombre;
-    private String pApellido;
-    private String sNombre;
-    private String sApellido;
-    private String Genero;
-    private Date FechaNacimiento;
-    private String Direccion;
-    private Integer Telefono;
-    private String Email;
+    protected Integer Cui;
+    protected String pNombre;
+    protected String pApellido;
+    protected String sNombre;
+    protected String sApellido;
+    protected String Genero;
+    protected Date FechaNacimiento;
+    protected String Direccion;
+    protected Integer Telefono;
+    protected String Email;
     
     public Personas(){
         this.Cui = null;
