@@ -15,6 +15,7 @@ public class Cliente extends Personas{
     private Integer Cod_cliente;
 
     public Cliente() {
+        super();
         this.Cod_cliente=0;
     }
 
