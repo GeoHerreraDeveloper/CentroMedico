@@ -35,98 +35,79 @@ public class Personas {
         this.telefono = null;
         this.email = null;
     }
-    public Personas(Integer Cui, String pNombre, String pApellido, String sNombre, String sApellido, String Genero, Date FechaNacimiento, String Direccion, Integer Telefono, String Email) {
-        this.cui = Cui;
-        this.pNombre = pNombre;
-        this.pApellido = pApellido;
-        this.sNombre = sNombre;
-        this.sApellido = sApellido;
-        this.genero = Genero;
-        this.fechaNacimiento = FechaNacimiento;
-        this.direccion = Direccion;
-        this.telefono = Telefono;
-        this.email = Email;
-    }
-
-    public Integer getCui() {
-        return cui;
-    }
-
-    public void setCui(Integer Cui) {
+    public Personas(Integer cui, String pNombre, String pApellido, String sNombre, String sApellido, String genero, Date fechaNacimiento, String direccion, Integer telefono, String email) {
         this.cui = cui;
-    }
-
-    public String getpNombre() {
-        return pNombre;
-    }
-
-    public void setpNombre(String pNombre) {
         this.pNombre = pNombre;
-    }
-
-    public String getpApellido() {
-        return pApellido;
-    }
-
-    public void setpApellido(String pApellido) {
         this.pApellido = pApellido;
-    }
-
-    public String getsNombre() {
-        return sNombre;
-    }
-
-    public void setsNombre(String sNombre) {
         this.sNombre = sNombre;
-    }
-
-    public String getsApellido() {
-        return sApellido;
-    }
-
-    public void setsApellido(String sApellido) {
         this.sApellido = sApellido;
+        this.genero = genero;
+        this.fechaNacimiento = fechaNacimiento;
+        this.direccion = direccion;
+        this.telefono = telefono;
+        this.email = email;
     }
 
-    public String getGenero() {
-        return genero;
-    }
-
-    public void setGenero(String Genero) {
-        this.genero = Genero;
-    }
-
-    public Date getFechaNacimiento() {
-        return fechaNacimiento;
-    }
-
-    public void setFechaNacimiento(Date FechaNacimiento) {
-        this.fechaNacimiento = FechaNacimiento;
-    }
-
-    public String getDireccion() {
-        return direccion;
-    }
-
-    public void setDireccion(String Direccion) {
-        this.direccion = Direccion;
-    }
-
-    public Integer getTelefono() {
-        return telefono;
-    }
-
-    public void setTelefono(Integer Telefono) {
-        this.telefono = Telefono;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String Email) {
-        this.email = Email;
-    }
-    
-    
+   
+    public Integer getCui() {
+		return cui;
+	}
+	public void setCui(Integer cui) {
+		this.cui = cui;
+	}
+	public String getpNombre() {
+		return pNombre;
+	}
+	public void setpNombre(String pNombre) {
+		this.pNombre = pNombre;
+	}
+	public String getpApellido() {
+		return pApellido;
+	}
+	public void setpApellido(String pApellido) {
+		this.pApellido = pApellido;
+	}
+	public String getsNombre() {
+		return sNombre;
+	}
+	public void setsNombre(String sNombre) {
+		this.sNombre = sNombre;
+	}
+	public String getsApellido() {
+		return sApellido;
+	}
+	public void setsApellido(String sApellido) {
+		this.sApellido = sApellido;
+	}
+	public String getGenero() {
+		return genero;
+	}
+	public void setGenero(String genero) {
+		this.genero = genero;
+	}
+	public Date getFechaNacimiento() {
+		return fechaNacimiento;
+	}
+	public void setFechaNacimiento(Date fechaNacimiento) {
+		this.fechaNacimiento = fechaNacimiento;
+	}
+	public String getDireccion() {
+		return direccion;
+	}
+	public void setDireccion(String direccion) {
+		this.direccion = direccion;
+	}
+	public Integer getTelefono() {
+		return telefono;
+	}
+	public void setTelefono(Integer telefono) {
+		this.telefono = telefono;
+	}
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
+        
             }
