@@ -28,7 +28,7 @@ public class ClienteDAO extends Conexion {
         respuesta=null;
         try {
             this.Conector();
-            sql = "insert into Persona values(?,?,?,?,?,?,?,?,?,?)";
+            sql = "insert into persona values(?,?,?,?,?,?,?,?,?,?)";
             ejecutar = this.getMiconexion().prepareStatement(sql);
             ejecutar.setInt(1, clientex.getCui());
             ejecutar.setString(2, clientex.getpNombre());
@@ -41,7 +41,7 @@ public class ClienteDAO extends Conexion {
             ejecutar.setInt(9, clientex.getTelefono());
             ejecutar.setString(10, clientex.getEmail());
             
-            sql = "insert into Cliente values(?,?)";
+            sql = "insert into cliente values(?,?)";
             ejecutar = this.getMiconexion().prepareStatement(sql);
             ejecutar.setInt(1, clientex.getCod_cliente());
             ejecutar.setInt(2, clientex.getCui());
@@ -64,7 +64,7 @@ public class ClienteDAO extends Conexion {
         ResultSet resultado;
         try {
             this.Conector();
-            sql= "select * from Cliente";
+            sql= "select * from cliente";
             ejecutar= this.getMiconexion().prepareStatement(sql);
             resultado = ejecutar.executeQuery();
             lista = new ArrayList();
@@ -91,11 +91,11 @@ public class ClienteDAO extends Conexion {
         }
         return lista;
     }
-    
+    //MODIFICAR
     public String actualizarCliente(Cliente datos){
         try {
             this.Conector();
-            sql="update Personas set pNombre=?, pApellido=?, sNombre=?, sApellido=?, Genero=?, FechaNacimiento=?, Direcion=?, Telefono=?, Email=? where Cui=?";
+            sql="update persona set pNombre=?, pApellido=?, sNombre=?, sApellido=?, Genero=?, FechaNacimiento=?, Direcion=?, Telefono=?, Email=? where Cui=?";
             ejecutar = this.getMiconexion().prepareStatement(sql);
             ejecutar.setString(1, datos.getpNombre());
             ejecutar.setString(2, datos.getpApellido());
@@ -107,7 +107,7 @@ public class ClienteDAO extends Conexion {
             ejecutar.setInt(8, datos.getTelefono());
             ejecutar.setString(9, datos.getEmail());
             ejecutar.executeUpdate();
-            respuesta = "datos modificados con exito";
+            respuesta = "Datos modificados con exito";
             
         } catch (SQLException ex) {
             System.out.println("Error en conexion: "+ ex);
