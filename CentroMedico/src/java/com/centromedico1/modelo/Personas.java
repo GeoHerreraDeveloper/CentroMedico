@@ -12,48 +12,48 @@ import java.sql.Date;
  * @author Usuario
  */
 public class Personas {
-    protected Integer Cui;
+    protected Integer cui;
     protected String pNombre;
     protected String pApellido;
     protected String sNombre;
     protected String sApellido;
-    protected String Genero;
-    protected Date FechaNacimiento;
-    protected String Direccion;
-    protected Integer Telefono;
-    protected String Email;
+    protected String genero;
+    protected Date fechaNacimiento;
+    protected String direccion;
+    protected Integer telefono;
+    protected String email;
     
     public Personas(){
-        this.Cui = null;
+        this.cui = null;
         this.pNombre = null;
         this.pApellido = null;
         this.sNombre = null;
         this.sApellido = null;
-        this.Genero = null;
-        this.FechaNacimiento = null;
-        this.Direccion = null;
-        this.Telefono = null;
-        this.Email = null;
+        this.genero = null;
+        this.fechaNacimiento = null;
+        this.direccion = null;
+        this.telefono = null;
+        this.email = null;
     }
     public Personas(Integer Cui, String pNombre, String pApellido, String sNombre, String sApellido, String Genero, Date FechaNacimiento, String Direccion, Integer Telefono, String Email) {
-        this.Cui = Cui;
+        this.cui = Cui;
         this.pNombre = pNombre;
         this.pApellido = pApellido;
         this.sNombre = sNombre;
         this.sApellido = sApellido;
-        this.Genero = Genero;
-        this.FechaNacimiento = FechaNacimiento;
-        this.Direccion = Direccion;
-        this.Telefono = Telefono;
-        this.Email = Email;
+        this.genero = Genero;
+        this.fechaNacimiento = FechaNacimiento;
+        this.direccion = Direccion;
+        this.telefono = Telefono;
+        this.email = Email;
     }
 
     public Integer getCui() {
-        return Cui;
+        return cui;
     }
 
     public void setCui(Integer Cui) {
-        this.Cui = Cui;
+        this.cui = cui;
     }
 
     public String getpNombre() {
@@ -89,43 +89,43 @@ public class Personas {
     }
 
     public String getGenero() {
-        return Genero;
+        return genero;
     }
 
     public void setGenero(String Genero) {
-        this.Genero = Genero;
+        this.genero = Genero;
     }
 
     public Date getFechaNacimiento() {
-        return FechaNacimiento;
+        return fechaNacimiento;
     }
 
     public void setFechaNacimiento(Date FechaNacimiento) {
-        this.FechaNacimiento = FechaNacimiento;
+        this.fechaNacimiento = FechaNacimiento;
     }
 
     public String getDireccion() {
-        return Direccion;
+        return direccion;
     }
 
     public void setDireccion(String Direccion) {
-        this.Direccion = Direccion;
+        this.direccion = Direccion;
     }
 
     public Integer getTelefono() {
-        return Telefono;
+        return telefono;
     }
 
     public void setTelefono(Integer Telefono) {
-        this.Telefono = Telefono;
+        this.telefono = Telefono;
     }
 
     public String getEmail() {
-        return Email;
+        return email;
     }
 
     public void setEmail(String Email) {
-        this.Email = Email;
+        this.email = Email;
     }
     
     

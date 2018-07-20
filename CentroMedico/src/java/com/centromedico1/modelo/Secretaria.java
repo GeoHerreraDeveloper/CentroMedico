@@ -20,16 +20,16 @@ public class Secretaria extends Personas {
 	public Secretaria(Integer Cui, String pNombre, String pApellido, String sNombre, String sApellido, String Genero,
 			Date FechaNacimiento, String Direccion, Integer Telefono, String Email, Integer cod_Secretaria, String user,
 			 String pass, Integer cod_Puesto) {
-	this.Cui = Cui;
+	this.cui = Cui;
         this.pNombre = pNombre;
         this.pApellido = pApellido;
         this.sNombre = sNombre;
         this.sApellido = sApellido;
-        this.Genero = Genero;
-        this.FechaNacimiento = FechaNacimiento;
-        this.Direccion = Direccion;
-        this.Telefono = Telefono;
-        this.Email = Email;
+        this.genero = Genero;
+        this.fechaNacimiento = FechaNacimiento;
+        this.direccion = Direccion;
+        this.telefono = Telefono;
+        this.email = Email;
         this.cod_Secretaria = cod_Secretaria;
 		this.user = user;
 		this.pass = pass;

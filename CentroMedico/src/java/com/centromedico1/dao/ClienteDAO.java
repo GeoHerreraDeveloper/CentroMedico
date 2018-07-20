@@ -92,4 +92,28 @@ public class ClienteDAO extends Conexion {
         return lista;
     }
     
+    public String actualizarCliente(Cliente datos){
+        try {
+            this.Conector();
+            sql="update Personas set pNombre=?, pApellido=?, sNombre=?, sApellido=?, Genero=?, FechaNacimiento=?, Direcion=?, Telefono=?, Email=? where Cui=?";
+            ejecutar = this.getMiconexion().prepareStatement(sql);
+            ejecutar.setString(1, datos.getpNombre());
+            ejecutar.setString(2, datos.getpApellido());
+            ejecutar.setString(3, datos.getsNombre());
+            ejecutar.setString(4, datos.getsApellido());
+            ejecutar.setString(5, datos.getGenero());
+            ejecutar.setDate(6, datos.getFechaNacimiento());
+            ejecutar.setString(7, datos.getDireccion());
+            ejecutar.setInt(8, datos.getTelefono());
+            ejecutar.setString(9, datos.getEmail());
+            ejecutar.executeUpdate();
+            respuesta = "datos modificados con exito";
+            
+        } catch (SQLException ex) {
+            System.out.println("Error en conexion: "+ ex);
+            respuesta= "No se puede modificar";
+        }
+        return respuesta;
+    }
+    
 }
