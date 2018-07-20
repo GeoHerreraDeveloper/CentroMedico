@@ -24,9 +24,10 @@ public class Puesto extends Departamento {
 	
 	
 
-	public Puesto(Integer cod_puesto, String nombre_Puesto, Date hora_Inicio, Date hora_Fin, Boolean salario,
+	public Puesto(int codDepartamento, String nombre, String descripcion, Integer cod_puesto, String nombre_Puesto, Date hora_Inicio, Date hora_Fin, Boolean salario,
 			Date inicia_Puesto, Integer cod_depto) {
-		super();
+		super(codDepartamento, nombre, descripcion);
+		// TODO Auto-generated constructor stub
 		this.cod_puesto = cod_puesto;
 		this.nombre_Puesto = nombre_Puesto;
 		this.hora_Inicio = hora_Inicio;

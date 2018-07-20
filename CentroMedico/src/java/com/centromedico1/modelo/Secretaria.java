@@ -17,24 +17,15 @@ public class Secretaria extends Personas {
 	}
 	
 
-	public Secretaria(Integer Cui, String pNombre, String pApellido, String sNombre, String sApellido, String Genero,
-			Date FechaNacimiento, String Direccion, Integer Telefono, String Email, Integer cod_Secretaria, String user,
+	public Secretaria(Integer cui, String pNombre, String pApellido, String sNombre, String sApellido, String genero,
+			Date fechaNacimiento, String direccion, Integer telefono, String email, Integer cod_Secretaria, String user,
 			 String pass, Integer cod_Puesto) {
-	this.cui = Cui;
-        this.pNombre = pNombre;
-        this.pApellido = pApellido;
-        this.sNombre = sNombre;
-        this.sApellido = sApellido;
-        this.genero = Genero;
-        this.fechaNacimiento = FechaNacimiento;
-        this.direccion = Direccion;
-        this.telefono = Telefono;
-        this.email = Email;
-        this.cod_Secretaria = cod_Secretaria;
-		this.user = user;
-		this.pass = pass;
-		this.cod_Puesto = cod_Puesto;
-		
+		super(cui, pNombre, pApellido, sNombre, sApellido, genero, fechaNacimiento, direccion, telefono, email);
+		// TODO Auto-generated constructor stub
+		 this.cod_Secretaria = cod_Secretaria;
+			this.user = user;
+			this.pass = pass;
+			this.cod_Puesto = cod_Puesto;
 	}
 
 	public Integer getCod_Secretaria() {
