@@ -17,7 +17,7 @@ public class Personas {
     protected String pApellido;
     protected String sNombre;
     protected String sApellido;
-    protected String generos;
+    protected String genero;
     protected Date fechaNacimiento;
     protected String direccion;
     protected Integer telefono;
