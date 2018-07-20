@@ -6,84 +6,71 @@ import java.sql.Date;
 
 public class Doctor extends Personas {
     
-    private int NoColegiado;
-    private String Usuario;
-    private String Contraseña;
-    private int Cod_Especialidad;
-    private int Cod_Puesto;
+    private int noColegiado;
+    private String usuario;
+    private String contraseña;
+    private int codEspecialidad;
+    private int codPuesto;
 
     public Doctor() {
         super();
-        this.NoColegiado = 0;
-        this.Usuario = null;
-        this.Contraseña = null;
-        this.Cod_Especialidad = 0;
-        this.Cod_Puesto = 0;
+        this.noColegiado = 0;
+        this.usuario = null;
+        this.contraseña = null;
+        this.codEspecialidad = 0;
+        this.codPuesto = 0;
        
     }
 
-    public Doctor(int NoColegiado, String Usuario, String Contraseña, int Cod_Especialidad, int Cod_Puesto, Integer Cui, String pNombre, String pApellido, String sNombre, String sApellido, String Genero, Date FechaNacimiento, String Direccion, Integer Telefono, String Email) {
-        super(Cui, pNombre, pApellido, sNombre, sApellido, Genero, FechaNacimiento, Direccion, Telefono, Email);
-        this.NoColegiado = NoColegiado;
-        this.Usuario = Usuario;
-        this.Contraseña = Contraseña;
-        this.Cod_Especialidad = Cod_Especialidad;
-        this.Cod_Puesto = Cod_Puesto;
-    }
-  
-    public int getNoColegiado() {
-        return NoColegiado;
+    public Doctor(int noColegiado, String usuario, String contraseña, int codEspecialidad, int codPuesto, Integer cui, String pNombre, String pApellido, String sNombre, String sApellido, String genero, Date fechaNacimiento, String direccion, Integer telefono, String email) {
+        super(cui, pNombre, pApellido, sNombre, sApellido, genero, fechaNacimiento, direccion, telefono, email);
+        this.noColegiado = noColegiado;
+        this.usuario = usuario;
+        this.contraseña = contraseña;
+        this.codEspecialidad = codEspecialidad;
+        this.codPuesto = codPuesto;
     }
 
-    public void setNoColegiado(int NoColegiado) {
-        this.NoColegiado = NoColegiado;
+    public int getNoColegiado() {
+        return noColegiado;
+    }
+
+    public void setNoColegiado(int noColegiado) {
+        this.noColegiado = noColegiado;
     }
 
     public String getUsuario() {
-        return Usuario;
+        return usuario;
     }
 
-    public void setUsuario(String Usuario) {
-        this.Usuario = Usuario;
+    public void setUsuario(String usuario) {
+        this.usuario = usuario;
     }
 
     public String getContraseña() {
-        return Contraseña;
+        return contraseña;
     }
 
-    public void setContraseña(String Contraseña) {
-        this.Contraseña = Contraseña;
+    public void setContraseña(String contraseña) {
+        this.contraseña = contraseña;
     }
 
-    public int getCod_Especialidad() {
-        return Cod_Especialidad;
+    public int getCodEspecialidad() {
+        return codEspecialidad;
     }
 
-    public void setCod_Especialidad(int Cod_Especialidad) {
-        this.Cod_Especialidad = Cod_Especialidad;
+    public void setCodEspecialidad(int codEspecialidad) {
+        this.codEspecialidad = codEspecialidad;
     }
 
-    public int getCod_Puesto() {
-        return Cod_Puesto;
+    public int getCodPuesto() {
+        return codPuesto;
     }
 
-    public void setCod_Puesto(int Cod_Puesto) {
-        this.Cod_Puesto = Cod_Puesto;
+    public void setCodPuesto(int codPuesto) {
+        this.codPuesto = codPuesto;
     }
     
     
     
-    
-    
-
    }
-
-   
-    
-    
-    
-    
-    
-    
-    
-
