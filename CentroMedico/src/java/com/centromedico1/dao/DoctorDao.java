@@ -1,6 +1,8 @@
 
-package com.centromedico1.modelo;
+package com.centromedico1.dao;
 
+import com.centromedico1.modelo.Conexion;
+import com.centromedico1.modelo.Doctor;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -8,6 +10,7 @@ import java.util.ArrayList;
 
 
 public class DoctorDao extends Conexion{
+    
     
     private String sql;
     private PreparedStatement ejecutar;
@@ -52,6 +55,7 @@ public class DoctorDao extends Conexion{
         return respuesta;
     } 
     
+    //Buscar la especialidad
     public ArrayList <Doctor> listaDoctor(){
         ArrayList<Doctor> lista = null;
         ResultSet resultado;
@@ -91,7 +95,7 @@ public class DoctorDao extends Conexion{
         }
         return lista;
     }
-    
+   
     public String eliminarDoctor(int NoColegiado){
         try{
             this.Conector();
@@ -145,7 +149,5 @@ public class DoctorDao extends Conexion{
         }
         return respuesta;
     }
-    
-    
     
 }
